@@ -13,9 +13,9 @@ enum Week {
   SUNDAY,
 }
 
-function isWeekend(day: string) {
+function isWeekend(day: string): boolean {
   if (day.toUpperCase() || Week[Week.SATURDAY] || Week[Week.SUNDAY]) {
-    return "is weekend";
+    return true;
   }
-  return "is not weekend";
+  return false;
 }
